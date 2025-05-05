@@ -11,7 +11,8 @@ To use this extension you need to add meta_request gem to your app's Gemfile:
 
 ```ruby
 group :development do
-  gem 'meta_request'
+  # original meta_request gem is broken. Using fork provided by rails_panel
+  gem 'meta_request', github: 'dejan/rails_panel', ref: 'meta_request-v0.8.5'
 end
 ```
 
